@@ -1,12 +1,12 @@
  Sorting Algorithms using Python 
  
-Selection Sort:
+Selection Sort
 Reference: https://www.youtube.com/watch?v=5KjapFQNxUo
 
-Bubble Sort:
+Bubble Sort
 https://www.youtube.com/watch?v=Vca808JTbI8
 
-Insertion Sort:
+Insertion Sort
 https://www.youtube.com/watch?v=R_wDA-PmGE4
 
 Merge Sort:
