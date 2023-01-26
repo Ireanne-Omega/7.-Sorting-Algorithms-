@@ -8,11 +8,10 @@ def merge_sort(OwnArray):
     if len(OwnArray) > 1:
         left_array = OwnArray[:len(OwnArray) // 2]
         right_array = OwnArray[len(OwnArray) // 2:]
-        print("\t\t", left_array, right_array)
+        print("\t",left_array, right_array)
 
         merge_sort(left_array)
         merge_sort(right_array)
-
         print( left_array, right_array)
 
         i = 0
