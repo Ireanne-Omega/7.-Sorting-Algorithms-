@@ -3,7 +3,7 @@ print("\nPROGRAMMED BY:")
 print("IREANNE N. OMEGA")
 print("BSCOE 2-2\n")
 
-#===================== merge sort =======================
+#
 def merge_sort(OwnArray):
     if len(OwnArray) > 1:
         left_array = OwnArray[:len(OwnArray) // 2]
@@ -37,16 +37,14 @@ def merge_sort(OwnArray):
             j += 1
             k += 1
 
-    print(OwnArray)
+        print(OwnArray)
 
 OwnArray = [53, 86, 25, 96, 79, 65, 37, 28, 80, 16]
 
-## Print Statement
-print("\n ===================== MERGE SORT =====================")
+# P R I N T  S T A T E M E N T
+print("\n=========================== MERGE SORT=======================")
 print("\n\t\t\t\t\t\tUnsorted Array List:\n\t\t\t", OwnArray, "\n")
-print("\n-----------------------------------------------------------")
 print("\nSelection Sorting:")
 merge_sort(OwnArray)
-print("\n-----------------------------------------------------------")
 print("\n\t\t\t\t\tSorted Array List:\n\t\t\t", OwnArray, "\n")
-print("\n =========================================================")
+print("\n==============================================================")

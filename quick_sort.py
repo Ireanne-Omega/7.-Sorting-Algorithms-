@@ -3,7 +3,7 @@ print("\nPROGRAMMED BY:")
 print("IREANNE N. OMEGA")
 print("BSCOE 2-2\n")
 
-## QUICK SORT
+# Q U I C K  S O R T
 def quick_sort(OwnArray, left, right):
     if left < right:
         partition_pos = partition(OwnArray, left, right)
@@ -15,6 +15,7 @@ def partition(OwnArray, left, right):
     i = left
     j = right - 1
     pivot = OwnArray[right]
+    print("\n", pivot)
 
     while i < j:
         while i < right and OwnArray[i] < pivot:
@@ -24,23 +25,23 @@ def partition(OwnArray, left, right):
 
         if i < j:
             OwnArray[i], OwnArray[j] = OwnArray[j], OwnArray[i]
+            print("\t\t", OwnArray)
 
     if OwnArray[i] > pivot:
         OwnArray[i], OwnArray[right] = OwnArray[right], OwnArray[i]
 
-        print("\t", OwnArray)
+        print("\t\t", OwnArray)
 
     return i
 
 OwnArray = [53, 86, 25, 96, 79, 65, 37, 28, 80, 16]
 
-## Print Statement
-print("\n ===================== QUICK SORT =====================")
-print("\n\t\tUnsorted Array List:\n\t\t", OwnArray, "\n")
-print("\n-----------------------------------------------------------")
-print("\t\tSelection Sorting:")
+# P R I N T  S T A T E M E N T
+print("\n============================ QUICK SORT ==========================")
+print("\n\t\t\t\t\t\tUnsorted Array List:\n\t\t\t", OwnArray, "\n")
+print("\n\nSelection Sorting:")
 quick_sort(OwnArray, 0, len(OwnArray) - 1)
-print("\n-----------------------------------------------------------")
-print("\n\t\tSorted Array List:\n\t\t", OwnArray, "\n")
-print("\n =========================================================")
+print("\n\n\t\t\t\t\tSorted Array List:\n\t\t\t", OwnArray, "\n")
+print("\n===================================================================")
+
 
