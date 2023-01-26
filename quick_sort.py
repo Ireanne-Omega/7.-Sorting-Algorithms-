@@ -15,8 +15,7 @@ def partition(OwnArray, left, right):
     i = left
     j = right - 1
     pivot = OwnArray[right]
-
-    print(pivot)
+    print("\n", pivot)
 
     while i < j:
         while i < right and OwnArray[i] < pivot:
@@ -26,13 +25,11 @@ def partition(OwnArray, left, right):
 
         if i < j:
             OwnArray[i], OwnArray[j] = OwnArray[j], OwnArray[i]
-
             print("\t", OwnArray)
 
     if OwnArray[i] > pivot:
         OwnArray[i], OwnArray[right] = OwnArray[right], OwnArray[i]
-
-        print("\t",OwnArray)
+        print("\t", OwnArray)
 
     return i
 
